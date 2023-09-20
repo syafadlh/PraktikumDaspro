@@ -1,4 +1,4 @@
-package PraktikumDaspro;
+
 public class ContohVariabel28 {
     public static void main(String[] args) {
 
