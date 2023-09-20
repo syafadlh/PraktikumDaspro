@@ -2,11 +2,11 @@ package PraktikumDaspro;
 public class ContohVariabel28 {
     public static void main(String[] args) {
 
-        String salahSatuHobiSayaAdalah = "Bermain petak umpet";
+        String salahSatuHobiSayaAdalah = "Menonton Film";
         boolean isPandai = true;
-        char jenisKelamin = 'L';
-        byte _umurSayaSekarang = 20;
-        double $ipk = 3.24, tinggi = 1.78;
+        char jenisKelamin = 'P';
+        byte _umurSayaSekarang = 19;
+        double $ipk = 3.75, tinggi = 1.60;
 
         System.out.println(salahSatuHobiSayaAdalah);
         System.out.println("Apakah pandai? " + isPandai);
