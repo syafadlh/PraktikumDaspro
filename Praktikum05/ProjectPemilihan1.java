@@ -4,21 +4,22 @@ public class ProjectPemilihan1 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
+        String kondisiBarang, keterangan;
+
         System.out.print("Input kondisi barang : ");
-        String kondisiBarang = sc.nextLine();
+        kondisiBarang = sc.nextLine();
 
         switch (kondisiBarang.toLowerCase()){
             case "hilang":
-                System.out.print("Barang hilang termasuk kerugian pegawai.");
+                keterangan = "tanggung jawab pegawai";
                 break;
             case "rusak":
-                System.out.print("Barang rusak termasuk kerugian perusahaan.");
-                break;
             case "kadaluwarsa":
-                System.out.print("Barang kadaluwarsa termasuk kerugian perusahaan.");
+                keterangan = "tanggung jawab perusahaan";
                 break;
             default:
-                System.out.print("Kondisi barang tidak valid.");
+                keterangan = "kondisi invalid";
         }
+        System.out.println("barang" + " " + kondisiBarang + " " + "termasuk" + " " + keterangan);
     }
 }
