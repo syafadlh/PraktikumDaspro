@@ -18,8 +18,10 @@ public class Segitiga28 {
         if (totalSudut == 180) {
             if ((sudut1 == 90) || (sudut2 == 90) || (sudut3 == 90))
                 System.out.println("Segitiga tersebut adalah segetiga siku-siku");
-            else
-                System.out.println("Segitiga tersebut adlah bukan segetiga siku-siku");
+            else if ((sudut1 == 60) || (sudut2 == 60) || (sudut3 == 60))
+                System.out.println("Segitiga tersebut adalah segetiga sama sisi");
+            else if ((sudut1 == 70) || (sudut2 == 70) || (sudut3 == 40))
+                System.out.println("Segitiga tersebut adalah segitiga sama kaki");
         } else 
             System.out.println("Bukan Segitiga");
     }  

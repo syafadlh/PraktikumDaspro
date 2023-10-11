@@ -7,6 +7,12 @@ public class Gaji28 {
         int penghasilan, gajiBersih;
         double pajak = 0;
 
+        System.out.print("Input Kategori : ");
+        kategori = sc.nextLine();
+
+        System.out.print("Input Penghasilan : ");
+        penghasilan = sc.nextInt();
+
         if (kategori.equalsIgnoreCase("pekerja")) {
             if (penghasilan <= 2000000)
                 pajak = 0.1;
