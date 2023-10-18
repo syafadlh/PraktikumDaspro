@@ -21,13 +21,12 @@ public class DoWhileCuti28 {
                     jatahCuti -= jumlahHari;
                     System.out.println("Sisa jatah cuti: " + jatahCuti);
                 } else {
-                    System.out.println("Sisa jatah cuci Anda tidak mencukupi");
-                    break;
+                    System.out.println("Sisa jatah cuti Anda tidak mencukupi");
                 }
             }
             System.out.print("Apakah Anda ingin melanjutkan (y/t)? ");
             konfirmasi = sc.next();
         } while (konfirmasi.equalsIgnoreCase("y") && jatahCuti > 0);
-        System.out.println("Terima kasih, program berakhir.");
+        System.out.println("Terima kasih, program berakhir");
     }
 }
