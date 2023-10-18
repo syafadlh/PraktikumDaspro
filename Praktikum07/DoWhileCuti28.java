@@ -25,6 +25,9 @@ public class DoWhileCuti28 {
                     break;
                 }
             }
-        } while (jatahCuti > 0);
+            System.out.print("Apakah Anda ingin melanjutkan (y/t)? ");
+            konfirmasi = sc.next();
+        } while (konfirmasi.equalsIgnoreCase("y") && jatahCuti > 0);
+        System.out.println("Terima kasih, program berakhir.");
     }
 }
