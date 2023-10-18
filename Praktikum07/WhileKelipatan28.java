@@ -1,19 +1,20 @@
 package Praktikum07;
 import java.util.Scanner;
-public class ForKelipatan28 {
+public class WhileKelipatan28 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-
         int bilangan, total = 0, counter = 0;
 
         System.out.print("Masukkan bilangan 1-9: ");
         bilangan = sc.nextInt();
 
-        for (int i = 0; i < 50; ++i) {
+        int i = 0;
+        while (i < 50) {
             if (i % bilangan == 0) {
                 total += i;
-                ++counter;
-            }
+                counter++;
+            } 
+            i++;
         }
         System.out.printf("Pada retang 1-50 tersebut %d bilangan kelipatan %d dengan total %d", counter, bilangan, total);
     }
