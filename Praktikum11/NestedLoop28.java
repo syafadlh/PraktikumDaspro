@@ -2,7 +2,14 @@ import java.util.Scanner;
 public class NestedLoop28 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double[][] suhu = new double[2][4];
+
+        System.out.print("Masukkan jumlah kota: ");
+        int jumlahKota = sc.nextInt();
+
+        System.out.print("Masukkan jumlah suhu untuk setiap kota: ");
+        int jumlahSuhu = sc.nextInt();
+
+        double[][] suhu = new double[jumlahKota][jumlahSuhu];
 
         for (int i=0; i < suhu.length; i++) {
             System.out.println("KOTA KE-" + (i+1));
