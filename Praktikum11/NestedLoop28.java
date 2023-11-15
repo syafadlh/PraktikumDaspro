@@ -12,13 +12,17 @@ public class NestedLoop28 {
                 suhu[i][j] = sc.nextInt();
             }
         }
+        // suhu foreach loop
         for (int i = 0; i < suhu.length;i++) {
             System.out.print("KOTA KE-" + (i+1) + ": ");
+            double sum = 0.0; //menyimpan jumlah suhu untuk perhitungan rata-rata
 
-            for (int j = 0; j < suhu[i].length; j++) {
-                System.out.print(suhu[i][j] + " ");
+            for (double temperature : suhu[i]) {
+                System.out.print(temperature + " ");
+                sum += temperature;
             }
-            System.out.println();
+            double average = sum / suhu[i].length;
+            System.out.println("\nRata-rata: " + average);
         }
     }
 }
