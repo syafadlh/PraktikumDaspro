@@ -17,5 +17,7 @@ public class Pangkat28 {
     public static void main(String[] args) {
         System.out.println(pangkat(6, 4));
         System.out.println(pangkatIterative(6, 4));
+        System.out.println(pangkat(2, 5));
+        System.out.println(pangkatIterative(2, 5));
     }
 }
